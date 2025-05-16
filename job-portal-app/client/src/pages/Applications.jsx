@@ -50,7 +50,7 @@ const Applications = () => {
             </tr>
           </thead>
           <tbody>
-            {jobsApplied.map((job,index) => true ? (
+            {jobsApplied.map((job,index) => true ? ( 
               <tr>
                 <td className='py-3 px-4 flex items-center gap-2 border-b'>
                   <img className='w-8 h-8' src={job.logo} alt="" />
