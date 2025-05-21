@@ -629,22 +629,22 @@ export const jobsData = [
             "image": company_icon,
         },
         description: `
-        <p>We are seeking a talented UX/UI Designer to enhance our user experience across digital platforms. You will collaborate with product managers and developers to create intuitive and engaging interfaces that meet user needs and improve overall satisfaction.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Conduct user research and usability testing to inform design decisions.</li>
-            <li>Create wireframes, prototypes, and high-fidelity mockups for web and mobile applications.</li>
-            <li>Work closely with development teams to ensure designs are implemented accurately.</li>
-            <li>Iterate on designs based on user feedback and analytics.</li>
-            <li>Stay updated on design trends and best practices in UX/UI.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Proficiency in design tools such as Sketch, Figma, or Adobe XD.</li>
-            <li>Strong understanding of user-centered design principles.</li>
-            <li>Experience with responsive and adaptive design techniques.</li>
-            <li>Excellent communication skills and ability to work collaboratively.</li>
-            <li>A portfolio showcasing relevant design projects is required.</li>
+            <p>We are seeking a talented UX/UI Designer to enhance our user experience across digital platforms. You will collaborate with product managers and developers to create intuitive and engaging interfaces that meet user needs and improve overall satisfaction.</p>
+            <h2><strong>Key Responsibilities</strong></h2>
+            <ol>
+                <li>Conduct user research and usability testing to inform design decisions.</li>
+                <li>Create wireframes, prototypes, and high-fidelity mockups for web and mobile applications.</li>
+                <li>Work closely with development teams to ensure designs are implemented accurately.</li>
+                <li>Iterate on designs based on user feedback and analytics.</li>
+                <li>Stay updated on design trends and best practices in UX/UI.</li>
+            </ol>
+            <h2><strong>Skills Required</strong></h2>
+            <ol>
+                <li>Proficiency in design tools such as Sketch, Figma, or Adobe XD.</li>
+                <li>Strong understanding of user-centered design principles.</li>
+                <li>Experience with responsive and adaptive design techniques.</li>
+                <li>Excellent communication skills and ability to work collaboratively.</li>
+                <li>A portfolio showcasing relevant design projects is required.</li>
         </ol>`,
         salary: 64000,
         date: 1729681667114,

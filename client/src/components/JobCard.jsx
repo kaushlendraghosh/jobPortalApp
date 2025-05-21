@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const JobCard = ({ job }) => {
 
   const navigate = useNavigate();
-
+  
   return (
     <div className='border p-6 shadow rounded'>
       <div className='flex justify-between items-center'> 
@@ -22,6 +22,8 @@ const JobCard = ({ job }) => {
       <div className='mt-4 flex gap-4 text-sm'> 
         <button 
           onClick={() => { 
+            console.log(job._id);
+            console.log("ram ram");
             navigate(`/apply-job/${job._id}`); 
             scrollTo(0, 0);
           }} 
@@ -33,6 +35,7 @@ const JobCard = ({ job }) => {
         
         <button 
           onClick={() => { 
+            
             navigate(`/apply-job/${job._id}`); 
             scrollTo(0, 0); 
           }} 

@@ -1,7 +1,7 @@
 import express from 'express'
 import { applyForJob, getUserData, getUserJobApplications, updateUserResume } from '../controllers/userController.js'
 import upload from '../config/multer.js'
-
+import { ClerkExpressRequireAuth } from "@clerk/clerk-sdk-node";
 const router = express.Router()
 
 // Get user data

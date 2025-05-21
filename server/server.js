@@ -15,8 +15,7 @@ import {clerkMiddleware} from '@clerk/express'
 import dotenv from 'dotenv';
 dotenv.config();
 
-// dotenv.config();
-// Initialize express 
+
 const app = express()
 
 // Connect to database

@@ -3,11 +3,13 @@ import moment from "moment";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify"; // Ensure `react-toastify` is installed
 import axios from "axios";
-import { AppContext } from "../context/AppContext"; // Assuming proper context is setup
+import { AppContext } from "../context/AppContext"; // Assuming proper context is setup\
+import Loading from "../components/Loading"; // Assuming you have a loading component
+import { useAuth } from "@clerk/clerk-react"; // Assuming you are using Clerk for authentication
 
 const ManageJobs = () => {
   const navigate = useNavigate();
-  const [jobs, setJobs] = useState([]);
+  const [jobs, setJobs] = useState(false);
   const { backendUrl, companyToken } = useContext(AppContext);
 
   // Function to fetch company Job Application data
@@ -58,7 +60,12 @@ const ManageJobs = () => {
     }
   }, [companyToken]);
 
-  return (
+  return  jobs ? jobs.length===0  ?  (
+  <div className="flex items-center justify-center h-[70vh]">
+    <p className="text-xl sm:text-2xl">No Jobs Availble or Posted</p>
+  </div>
+  ) 
+  : (
     <div className="container p-4 max-w-5xl">
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-200 max-sm:text-sm">
@@ -122,7 +129,7 @@ const ManageJobs = () => {
         </button>
       </div>
     </div>
-  );
+  ): <Loading></Loading>
 };
 
 export default ManageJobs;

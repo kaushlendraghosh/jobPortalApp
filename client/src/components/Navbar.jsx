@@ -10,7 +10,7 @@ const Navbar = () => {
     const {user} = useUser()
     const navigate = useNavigate()
 
-    const { setShowRecruiterLogin } = useContext(AppContext)
+    const { setShowRecruiterLogin,fetchUserApplications } = useContext(AppContext)
   return (
     <div className='shadow py-4'> 
         <div className='container px-4 2xl:px-20 mx-auto flex justify-between items-center'>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 user
                 ?
                 <div className='flex items-center gap-3'>
-                    <Link   to={'/applications'}>Applied Jobs</Link>
+                    <Link   to={'/applications'}><button onClick={fetchUserApplications} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full h-8 w-30'>Applied Jobs</button></Link>
                     <p>|</p>
                     <p className='max-sm:hidden'>Hi , {user.firstName+" "+user.lastName}</p>
                     <UserButton/>  
